@@ -1,0 +1,31 @@
+# Sensitive files
+.env
+*.pem
+*.key
+
+# Dependency folders
+node_modules/
+vendor/
+venv/
+__pycache__/
+
+# Build and output directories
+dist/
+build/
+target/git 
+out/
+
+# Log and temporary files
+*.log
+*.tmp
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.class
+*.o
+*.exe
