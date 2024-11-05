@@ -14,18 +14,41 @@
   <body class="text-gray-600">
     <div class="grid md:grid-cols-3">
       <!--content wrapper-->
-      <div class="md:col-span-1">
-        <nav>
-          <div>
+      <div class="md:col-span-1 md:flex md:justify-end">
+        <nav class="text-right">
+          <div class="flex justify-between items-center">
             <h1 class="font-bold uppercase p-4 border-b-100">
               <a class="" href="/" class="hover:text-gray-100">Food Ninja</a>
             </h1>
+            <div class="px-4 cursor-pointer md:hidden">
+              <svg
+                class="w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+                id="burger"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </div>
-          <ul class="text-gray-700 font-bold">
-            <li class="text-gray-700 font-bold">
+          <ul
+            class="text-gray-700 font-bold text-sm mt-6 hidden md:block"
+            id="menu"
+          >
+            <li
+              class="text-gray-700 font-bold border-red-500 border-r-4 mr-4 px-2 py-2"
+            >
               <a href="#">
                 <svg
-                  class="w-5 inline-block hover:w-7"
+                  class="w-5 inline-block"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -43,7 +66,9 @@
                 <span class="">Home</span>
               </a>
             </li>
-            <li>
+            <li
+              class="text-gray-700 font-bold border-white border-r-4 mr-4 px-2 py-2"
+            >
               <a href="#">
                 <svg
                   class="w-5 inline-block"
@@ -64,7 +89,9 @@
                 <span>About</span>
               </a>
             </li>
-            <li>
+            <li
+              class="text-gray-700 font-bold border-white border-r-4 mr-4 px-2 py-2"
+            >
               <a href="#">
                 <svg
                   class="w-5 inline-block"
@@ -225,5 +252,6 @@
         </div>
       </main>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
